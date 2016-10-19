@@ -1,0 +1,36 @@
+wincap.exe
+----------
+
+This is a Presentation Manager utility to copy window/desktop contents to a
+bitmap. It is based on IBM Visual Age C++. You can select either a window or a
+rectangular area on desktop. If a window is selected the contents inside the
+window rectangle are copied.
+
+Use "File-Select Window" or "File-Select Area" menu option to start selection.
+
+If "File-Select Window" is selected, windows on desktop will be selected as
+mouse is moved over the screen. Move the mouse pointer to the desired window
+and press mouse button1 to select. If "File-Select Area" is selected, choose
+a rectangular area on the desktop by dragging mouse button1.
+
+Use "File-Save Bitmap" to save the bitmap to a BMP file.
+
+Menu items under "Options" can be checked on/off to set wincap window options.
+Select "Options-Hide Before Select" to hide the wincap window before selecting
+a bitmap.
+Select "Options-Activate Selected Win" to activate the window under mouse
+pointer when a window is being selected.
+Select "Options-Stretch To Fit" to expand/shrink the selected bitmap to wincap
+window size. (If you want to save the bitmap with this size, start another
+instance of wincap and copy contents of the previous instance in the new wincap
+window.)
+
+Note : The following Visual Age C++ dlls are required to run wincap.exe
+- CPPOM30.DLL, CPPOOB3.DLL, CPPOOU3.DLL
+
+
+Files :
+wincap.cpp - C++ source.
+wincap.mak - Make file to make wincap.exe
+wincap.exe - The executable.
+
